@@ -1,0 +1,30 @@
+D77-TC Pelican 1.8.2 (with C709 Longsword 1.8.7)
+
+Requires: Nuclear Option 0.34.6 with BepInEx 5 (tested with BepInEx 5.4.23.5).
+Optional: Blueprinter 2.x. Both plugins work with or without it.
+
+Install
+1. Close Nuclear Option.
+2. Replace any existing D77TCPelican and C709Longsword folders in:
+   <Nuclear Option>\BepInEx\plugins\
+   with the two folders from this package.
+3. Start the game. BepInEx\LogOutput.log should show:
+   Loading [C709 Longsword 1.8.7]
+   Loading [D77-TC Pelican 1.8.2]
+4. The Pelican appears in the mission editor aircraft catalog as "D77-TC Pelican".
+
+Both folders are required. The Pelican uses the Longsword's flight model and
+will not load without it. Keep each folder's Airframe folder, and the Pelican's
+Audio, Pilot and Troops folders, beside its DLL. The Longsword's Pilot folder
+is also required.
+
+Multiplayer: every player needs the same two folders, with the same versions.
+
+Pelican controls
+- Custom Axis 1 vectors the nozzles from 0 to 90 degrees.
+- Hold Brake with the throttle above idle to deploy reverse thrust. At idle,
+  Brake is the wheel brake.
+- In VTOL with the nozzles at least 80 degrees down, holding Brake captures the
+  altitude. Release Brake, move the throttle, or vector out to take over.
+
+Uninstall: close the game and delete the two folders from BepInEx\plugins.
